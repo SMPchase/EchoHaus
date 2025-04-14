@@ -1,82 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Echohaus | Creative Studio</title>
-    <meta name="description" content="Echohaus is a mobile recording and vocal development studio based in Havre de Grace, Maryland. Powered by Glasswall.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="geo.region" content="US-MD">
-    <meta name="geo.placename" content="Havre de Grace">
-    <meta name="geo.position" content="39.5493;-76.0916">
-    <meta name="ICBM" content="39.5493, -76.0916">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "RecordingStudio",
-      "name": "Echohaus",
-      "image": "https://echohaushq.com/logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Havre de Grace",
-        "addressRegion": "MD",
-        "addressCountry": "US"
-      },
-      "url": "https://echohaushq.com",
-      "description": "Echohaus is a mobile and remote recording studio based in Havre de Grace, MD. We specialize in artist development, vocal tracking, and mixing.",
-      "telephone": "",
-      "email": "studio@echohaushq.com"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Echohaus is a mobile and remote creative studio based in Havre de Grace, MD. Powered by Glasswall.">
+  <title>Echohaus | Creative Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #f5f5f5;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
     }
-    </script>
+    h1 {
+      font-size: 3rem;
+      margin-top: 60px;
+      letter-spacing: 2px;
+    }
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    em {
+      font-style: italic;
+    }
+    .section {
+      margin-top: 60px;
+    }
+    .services {
+      margin-top: 30px;
+    }
+    .services h2 {
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      margin: 10px 0;
+    }
+    .buttons {
+      margin-top: 40px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 12px 24px;
+      border: 1px solid #f5f5f5;
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .buttons a:hover {
+      background-color: #f5f5f5;
+      color: #111;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="container fade-in">
-        <h1 class="title">ECHOHAUS</h1>
-        <p class="tagline italic">A creative studio experience. Built on presence, not just place.</p>
+  <h1>ECHOHAUS</h1>
+  <p><em>A creative studio experience. Built on presence, not just place.</em></p>
+  <p>Remote sessions. Mobile tracking,<br>Artist development.</p>
+  <p><em>Echohaus is wherever the emotion hits.</em></p>
 
-        <p class="description">Remote sessions. Mobile tracking, <br> Artist development. <br><br> Based in Havre de Grace, Maryland.</p>
+  <div class="section services">
+    <h2>SERVICES</h2>
+    <ul>
+      <li>Mobile Recording</li>
+      <li>Vocal Coaching / Development</li>
+      <li>Mixing / Song Polish</li>
+      <li>Creative Direction</li>
+    </ul>
+  </div>
 
-        <p class="tagline italic">Echohaus <span class="italic">is</span> wherever the emotion hits.</p>
+  <div class="buttons">
+    <a href="mailto:studio@echohaushq.com">Contact Studio</a>
+    <a href="mailto:book@echohaushq.com">Apply Now</a>
+  </div>
 
-        <div class="services-header">SERVICES</div>
-
-        <ul class="services">
-            <li>Mobile Recording</li>
-            <li>Vocal Coaching / Development</li>
-            <li>Mixing / Song Polish</li>
-            <li>Creative Direction</li>
-        </ul>
-
-        <div class="buttons">
-            <a href="mailto:studio@echohaushq.com" class="contact-btn" title="Reach out with questions or ideas.">📩 CONTACT STUDIO</a>
-            <a href="mailto:book@echohaushq.com" class="apply-btn" title="Start your creative journey with Echohaus.">APPLY NOW</a>
-        </div>
-
-        <section class="location">
-            <h2>Studio Location</h2>
-            <p>Echohaus is based in Havre de Grace, MD and serves the surrounding Baltimore and Philadelphia areas with mobile and remote recording sessions.</p>
-        </section>
-
-        <section class="map">
-            <h2>Find Us</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3083.7721020511236!2d-76.09381238462287!3d39.549300179478286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c82f0b95de7b01%3A0x69dc77ae91a7db89!2sHavre%20De%20Grace%2C%20MD!5e0!3m2!1sen!2sus!4v1713099999999"
-                width="100%" 
-                height="250" 
-                style="border:0; border-radius: 10px; margin-top: 20px;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
-
-        <footer>
-            <a href="https://glasswallrecords.com" target="_blank" class="footer-link">Powered by GLASSWALL</a>
-            <p><a href="https://yelp.com" target="_blank" style="color:#888; text-decoration: none;">Leave us a review on Yelp</a></p>
-        </footer>
-    </div>
+  <footer>
+    <p><a href="https://glasswallrecords.com" target="_blank">Powered by GLASSWALL</a></p>
+  </footer>
 </body>
 </html>

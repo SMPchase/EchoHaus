@@ -1,35 +1,35 @@
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 60px;
+.contact-btn::before {
+    content: "📩";
+    margin-right: 8px;
+    font-size: 18px;
+    vertical-align: middle;
 }
 
-@media (min-width: 500px) {
-    .buttons {
-        flex-direction: row;
-    }
-}
-
+/* Add stylish underline effect */
 .contact-btn,
 .apply-btn {
-    display: inline-block;
-    padding: 12px 36px;
-    border: 1px solid #fff;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.contact-btn:hover,
-.apply-btn:hover {
-    background-color: #fff;
-    color: #000;
-    cursor: pointer;
+.contact-btn::after,
+.apply-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.contact-btn:hover::after,
+.apply-btn:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 .footer-link {
-    font
+    font-size: 14px;
+    color: #888
